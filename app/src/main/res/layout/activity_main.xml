@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leo.oct2417.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="68dp"
+        android:layout_alignBaseline="@+id/tv_user"
+        android:layout_alignBottom="@+id/tv_user"
+        android:layout_toRightOf="@+id/tv_user"
+        android:layout_toEndOf="@+id/tv_user"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="133dp"
+        android:layout_alignTop="@+id/et_password"
+        android:layout_alignRight="@+id/tv_user"
+        android:layout_alignEnd="@+id/tv_user" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_below="@+id/et_user"
+        android:layout_alignLeft="@+id/et_user"
+        android:layout_alignStart="@+id/et_user"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY INFO"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="125dp"
+        android:layout_below="@+id/et_user"
+        android:layout_toRightOf="@+id/btn_save"
+        android:layout_toEndOf="@+id/btn_save"
+        android:onClick="loadInfo"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE INFO"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_alignBaseline="@+id/btn_display"
+        android:layout_alignBottom="@+id/btn_display"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="saveInfo"/>
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="366dp"
+        android:layout_below="@+id/btn_save"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_marginTop="65dp" />
+
+</RelativeLayout>
